@@ -1,0 +1,32 @@
+{
+  "name": "reply-reviewer",
+  "version": "3.5.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "wxt",
+    "typecheck": "wxt prepare && tsc --noEmit",
+    "test": "vitest run",
+    "build": "wxt build -b chrome",
+    "zip": "wxt zip -b chrome",
+    "postinstall": "wxt prepare"
+  },
+  "dependencies": {
+    "@mozilla/readability": "^0.6.0",
+    "react": "latest",
+    "react-dom": "latest",
+    "zod": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/chrome": "latest",
+    "@types/jsdom": "^30.0.0",
+    "@types/node": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "@wxt-dev/module-react": "latest",
+    "jsdom": "latest",
+    "typescript": "latest",
+    "vitest": "latest",
+    "wxt": "latest"
+  }
+}

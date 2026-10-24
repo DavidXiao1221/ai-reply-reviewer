@@ -1,0 +1,30 @@
+# Local dependencies, credentials, builds and delivery artifacts
+**/node_modules/
+**/.wxt/
+**/.output/
+**/.env*
+**/output/
+**/release/
+**/.playwright-cli/
+*.log
+.DS_Store
+Thumbs.db
+
+# Internal research, historical delivery notes and local-only tooling
+/reply-reviewer/README.md
+/reply-reviewer/docs/
+/reply-reviewer/experiments/
+/reply-reviewer/tools/*
+!/reply-reviewer/tools/evalConfig.ts
+
+# Private conversation/model-response regression material stays local.
+# The public suite uses constructed examples and reduced DOM fixtures.
+/reply-reviewer/fixtures/partialRecovery.ts
+/reply-reviewer/fixtures/partial-business.json
+/reply-reviewer/fixtures/partial-animation.json
+/reply-reviewer/fixtures/partial-engineering.json
+/reply-reviewer/fixtures/empty-point-live.json
+/reply-reviewer/fixtures/malformed-animation-live.json
+/reply-reviewer/fixtures/numbered-animation-live.json
+/reply-reviewer/tests/partial-recovery.test.ts
+/reply-reviewer/tests/model-json-recovery.test.ts
